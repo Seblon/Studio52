@@ -1,9 +1,18 @@
+* {
+   box-sizing: border-box;
+}
+
 /* General styling */
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+}
 
 img {
    width: 100%;
    max-width: 100%;
    height: auto;
+   margin: 0;
+   padding: 0;
 }
-
-/* End general styling */
