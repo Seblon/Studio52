@@ -19,7 +19,7 @@
 
       <!-- logo -->
       <div class="logo">
-         <img src="assets/img/logo.svg" alt="Logo">
+         <a href="index.html"><img src="assets/img/logo.svg" alt="Logo"></a>
       </div>
       <!-- end of logo -->
 
@@ -54,7 +54,11 @@
             <div class="hero-content__heading--large">
                <h2>ux</h2>
             </div>
-            <a href="#"><button class="btn">Till anmälan</button></a>
+            <a href="#" class="btn">Till anmälan <i class="fas fa-angle-double-right"></i></a>
+            <div class="hero-content__scroll-down">
+               <span class="hero-content__scroll-down-text">Visa alla kurser</span>
+               <i class="fas fa-angle-down fa-2x"></i>
+            </div>
          </div>
       </div>
       <!-- end of hero -->
@@ -63,73 +67,89 @@
       <section class="courses-section">
 
          <!-- article -->
-         <article class="course-article">
-            <figure class="course-image">
+         <article class="course">
+            <figure class="course__image">
                <a href="#">
                   <img src="assets/img/ux-design.jpg" alt="Dummytext">
                </a>
             </figure>
-            <div class="course-heading">
-               <h3>ux-design</h3>
-            </div>
-            <div class="course-details">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
-                  dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
-                  Numquam, facilis esse!</p>
+            <div class="course__desc">
+               <div class="course__title">
+                  <a href="#">
+                     <h3>UX Design</h3>
+                  </a>
+               </div>
+               <div class="course__details">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
+                     dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
+                     Numquam, facilis esse!</p>
+               </div>
             </div>
          </article>
          <!-- end of article -->
 
          <!-- article -->
-         <article class="course-article">
-            <figure class="course-image">
+         <article class="course">
+            <figure class="cours__image">
                <a href="#">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Design_thinking.png" alt="Dummytext">
                </a>
             </figure>
-            <div class="course-heading">
-               <h3>design thinking</h3>
-            </div>
-            <div class="course-details">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
-                  dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
-                  Numquam, facilis esse!</p>
+            <div class="course__desc">
+               <div class="course__title">
+                  <a href="#">
+                     <h3>Design Thinking</h3>
+                  </a>
+               </div>
+               <div class="course__details">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
+                     dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
+                     Numquam, facilis esse!</p>
+               </div>
             </div>
          </article>
          <!-- end of article -->
 
          <!-- article -->
-         <article class="course-article">
-            <figure class="course-image">
+         <article class="course">
+            <figure class="course__image">
                <a href="#">
                   <img src="assets/img/digital-design.jpg" alt="Dummytext">
                </a>
             </figure>
-            <div class="course-heading">
-               <h3>digital design</h3>
-            </div>
-            <div class="course-details">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
-                  dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
-                  Numquam, facilis esse!</p>
+            <div class="course__desc">
+               <div class="course__title">
+                  <a href="#">
+                     <h3>Digital Design</h3>
+                  </a>
+               </div>
+               <div class="course__details">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
+                     dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
+                     Numquam, facilis esse!</p>
+               </div>
             </div>
          </article>
          <!-- end of article -->
 
          <!-- article -->
-         <article class="course-article">
-            <figure class="course-image">
+         <article class="course">
+            <figure class="course__image">
                <a href="#">
                   <img src="assets/img/graphic-design.jpg" alt="Dummytext">
                </a>
             </figure>
-            <div class="course-heading">
-               <h3>grafisk design</h3>
-            </div>
-            <div class="course-details">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
-                  dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
-                  Numquam, facilis esse!</p>
+            <div class="course__desc">
+               <div class="course__title">
+                  <a href="#">
+                     <h3>Grafisk Design</h3>
+                  </a>
+               </div>
+               <div class="course__details">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum earum et officia nisi dolorum
+                     dolore tenetur. Laudantium distinctio cum placeat! Aliquam voluptatem inventore harum fugiat sed.
+                     Numquam, facilis esse!</p>
+               </div>
             </div>
          </article>
          <!-- end of article -->
@@ -141,21 +161,21 @@
 
    <!-- footer -->
    <footer class="footer">
-      <div class="footer-content--left">
-         <ul>
-            <li>våra kurser</li>
-            <li>designprinciper</li>
-            <li>kontakt</li>
+      <div class="footer__content--left">
+         <ul class="footer__menu">
+            <li class="footer__menu-item">våra kurser</li>
+            <li class="footer__menu-item">designprinciper</li>
+            <li class="footer__menu-item">kontakt</li>
          </ul>
       </div>
 
-      <div class="footer-content--right">
+      <div class="footer__content--right">
          <h3>Möt oss i social media</h3>
          <ul class="footer__social-icons">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
          </ul>
       </div>
 
