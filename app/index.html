@@ -23,14 +23,12 @@
       </div>
       <!-- end of logo -->
 
-      <!-- navigation -->
-      <input type="checkbox" class="checkbox" id="click">
-      <label for="click">
-         <div class="menu-icon">
-            <div class="line"></div>
-         </div>
-      </label>
+      <!-- menu icon-->
+      <div class="menu-icon">
+         <div class="menu-icon__centerline"></div>
+      </div>
 
+      <!-- navigation -->
       <nav class="navigation">
          <ul class="navigation-list">
             <li class="navigation-item"><a href="#">våra kurser</a></li>
@@ -54,9 +52,9 @@
             <div class="hero-content__heading--large">
                <h2>ux</h2>
             </div>
-            <a href="#" class="btn">Till anmälan <i class="fas fa-angle-double-right"></i></a>
+            <a href="#" class="btn btn__shadow" role="button">Till anmälan <i class="fas fa-angle-double-right"></i></a>
             <div class="hero-content__scroll-down">
-               <span class="hero-content__scroll-down-text">Visa alla kurser</span>
+               <span class="hero-content__scroll-down-text"><a href="#courses">Visa alla kurser</a></span>
                <i class="fas fa-angle-down fa-2x"></i>
             </div>
          </div>
@@ -67,15 +65,21 @@
       <section class="courses-section">
 
          <!-- article -->
-         <article class="course">
+         <article class="course" id="courses">
             <figure class="course__image">
-               <a href="#">
-                  <img src="assets/img/ux-design.jpg" alt="Dummytext">
+               <a href="course-1.html">
+                  <picture>
+                     <source srcset="assets/img/ux-design__xlarge-hi-dpi.jpg 3840w" media="(min-width: 120rem)">
+                     <source srcset="assets/img/ux-design__large-hi-dpi.jpg 1920w" media="(min-width: 80rem)">
+                     <source srcset="assets/img/ux-design__medium-hi-dpi.jpg 1500w" media="(min-width: 50rem)">
+                     <source srcset="assets/img/ux-design__small-hi-dpi.jpg 1000w" media="(min-width: 22.5rem)">
+                     <img src="assets/img/ux-design__xsmall.jpg" alt="People in a user experience meeting.">
+                  </picture>
                </a>
             </figure>
             <div class="course__desc">
                <div class="course__title">
-                  <a href="#">
+                  <a href="course-1.html">
                      <h3>UX Design</h3>
                   </a>
                </div>
@@ -92,7 +96,12 @@
          <article class="course">
             <figure class="cours__image">
                <a href="#">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Design_thinking.png" alt="Dummytext">
+                  <picture>
+                     <source srcset="assets/img/design-thinking__large-hi-dpi.png 1280w" media="(min-width: 1920px)">
+                     <source srcset="assets/img/design-thinking__medium-hi-dpi.png 800w" media="(min-width: 1500px)">
+                     <source srcset="assets/img/design-thinking__small-hi-dpi.png 360w" media="(min-width: 1000px">
+                     <img srcset="assets/img/design-thinking__xsmall-hi-dpi.png" alt="What is design thinking, really?">
+                  </picture>
                </a>
             </figure>
             <div class="course__desc">
@@ -114,7 +123,14 @@
          <article class="course">
             <figure class="course__image">
                <a href="#">
-                  <img src="assets/img/digital-design.jpg" alt="Dummytext">
+                  <picture>
+                     <source srcset="assets/img/digital-design__xlarge-hi-dpi.jpg 3840w" media="(min-width: 120rem)">
+                     <source srcset="assets/img/digital-design__large-hi-dpi.jpg 1920w" media="(min-width: 80rem)">
+                     <source srcset="assets/img/digital-design__medium-hi-dpi.jpg 1500w" media="(min-width: 50rem)">
+                     <source srcset="assets/img/digital-design__small-hi-dpi.jpg 1000w" media="(min-width: 22.5rem)">
+                     <img src="assets/img/digital-design__xsmall-hi-dpi.jpg"
+                        alt="A computer screen and a laptop on a desk.">
+                  </picture>
                </a>
             </figure>
             <div class="course__desc">
@@ -136,7 +152,14 @@
          <article class="course">
             <figure class="course__image">
                <a href="#">
-                  <img src="assets/img/graphic-design.jpg" alt="Dummytext">
+                  <picture>
+                     <source srcset="assets/img/graphic-design__xlarge-hi-dpi.jpg 3840w" media="(min-width: 120rem)">
+                     <source srcset="assets/img/graphic-design__large-hi-dpi.jpg 1920w" media="(min-width: 80rem)">
+                     <source srcset="assets/img/graphic-design__medium-hi-dpi.jpg 1500w" media="(min-width: 50rem)">
+                     <source srcset="assets/img/graphic-design__small-hi-dpi.jpg 1000w" media="(min-width: 22.5rem)">
+                     <img src="assets/img/graphic-design__xsmall-hi-dpi.jpg"
+                        alt="A design handbook, a wacom drawing pad and an Apple watch.">
+                  </picture>
                </a>
             </figure>
             <div class="course__desc">

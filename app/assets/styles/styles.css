@@ -1,7 +1,8 @@
 @import 'normalize.css';
-@import 'base/_global.css';
-@import 'modules/_header.css';
-@import 'modules/_hero.css';
-@import 'modules/_courses.css';
-@import 'modules/_footer.css';
-@import 'modules/_article.css';
+@import 'base/_mixins';
+@import 'base/_global';
+@import 'modules/_header';
+@import 'modules/_hero';
+@import 'modules/_courses';
+@import 'modules/_footer';
+@import 'modules/_article';

@@ -5,7 +5,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .4)), url("../../../assets/img/hero.jpg") center / cover no-repeat;
+   background: linear-gradient(120deg, rgba(246, 211, 101, .6) 0%, rgba(253, 160, 133, .85) 100%), url("../../../assets/img/hero__hi-dpi.jpg") center / cover no-repeat;
    background-attachment: fixed;
 }
 
@@ -18,28 +18,55 @@
    color: #fff;
 
    &__heading--small h1 {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 400;
       margin: 0;
+      color: #151515;
+      text-shadow: -1px -1px 3px #fff;
+
+      @mixin atSmall {
+         font-size: 2.2rem;
+         }
    }
 
    &__heading--large h2 {
-      margin: -2rem 0 0;
+      margin: -1.6rem 0 0;
       padding: 0;
-      font-size: 13rem;
+      font-size: 10.5rem;
       font-weight: 800;
       text-transform: uppercase;
+      -webkit-text-stroke: 3px #333;
+
+      @mixin atSmall {
+         margin: -2rem 0 0;
+         font-size: 13rem;
+      }
    }
 
-   &__scroll-down {
-      margin: 0;
-      padding: 0;
-   }
+      &__scroll-down {
+         display: none;
+         text-shadow: 1px 1px 1px #333;
 
-   &__scroll-down-text {
-      display: block;
-      margin-top: 4rem;
-      margin-bottom: 1rem;
-      font-size: 1.2rem;
-   }
+         @mixin atSmall {
+            display: block;
+            margin: 0;
+            padding: 0;
+         }
+      }
+
+      &__scroll-down-text a {
+         display: none;
+
+         @mixin atSmall {
+            display: block;
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #333;
+            cursor: pointer;
+         }
+     }
 }
