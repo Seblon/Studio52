@@ -18,9 +18,19 @@
       display: flex;
       flex-direction: column;
       margin: 0 .625rem 0;
+      justify-content: center;
    }
 
-   &__title {
-      color: #333;
+   &__ingress {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #444;
+      margin-top: 0;
+   }
+
+   &__desc {
+      line-height: 1.4;
+      margin-bottom: 2rem;
    }
 }

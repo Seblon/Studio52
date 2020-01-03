@@ -10,15 +10,29 @@ html {
 /* General styling */
 
 h1 {
-   font-size: 2.369rem;
+   font-size: 3.157rem;
+   margin: 2rem 0;
 }
 
 h2 {
-   font-size: 1.777rem;
+   font-size: 2.369rem;
+   margin: 1.6rem 0;
 }
 
 h3 {
+   font-size: 1.777rem;
+   margin: 1.3rem 0;
+}
+
+h4 {
    font-size: 1.333rem;
+   margin: 1.1rem 0;
+}
+
+h5 {
+   font-size: 1.333rem;
+   font-weight: 200;
+   margin: 1.1rem 0;
 }
 
 body {
@@ -26,8 +40,6 @@ body {
    flex-direction: column;
    font-family: 'Montserrat', sans-serif;
    overflow-x: hidden;
-   scroll-snap-type: y mandatory;
-   overflow-y: scroll;
 }
 
 img {
@@ -45,35 +57,38 @@ img {
    color: #fff;
    text-decoration: none;
    text-shadow: .03125rem .03125rem .0625rem #000;
-   padding: .6rem 1.8rem;
+   padding: .8rem 1.8rem;
    border-radius: 1.5rem;
-   margin-top: 2rem;
    text-transform: uppercase;
    font-weight: 700;
    text-align: center;
+   letter-spacing: 1px;
 
-   &__shadow {
-      box-shadow: 0px 0px 2px 2px rgb(175, 92, 69);
+   &__inverted {
+      background-color: #fff;
+      text-shadow: none;
+      color: #333;
+      font-weight: 500;
    }
 
-   @mixin atSmall {
-      padding: 1rem 4rem;
+   &--shadow {
+      box-shadow: 0px 0px 2px 2px #0085a7;
+   }
+
+   & i {
+      margin-left: 2rem;
    }
 }
 
-.btn i {
-   margin-left: 1rem;
-}
-
-.btm-m-1x {
+.btm-m--1x {
    margin-bottom: 1rem;
 }
-.btm-m-2x {
+.btm-m--2x {
    margin-bottom: 2rem;
 }
-.btm-m-3x {
+.btm-m--3x {
    margin-bottom: 3rem;
 }
-.btm-m-4x {
+.btm-m--4x {
    margin-bottom: 4rem;
 }
