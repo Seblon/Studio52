@@ -5,11 +5,15 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-image: linear-gradient(to bottom, rgba(20, 30, 48, .95), rgba(36, 59, 85, .9)), url("../../../assets/img/hero__hi-dpi.jpg");
+   background-image: linear-gradient(to bottom, rgba(20, 30, 48, .95), rgba(36, 59, 85, .9)), url("../../../assets/img/hero__med-dpi.jpg");
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   background-attachment: fixed;
+   background-attachment: scroll;
+
+   @mixin atMedium {
+      background-attachment: fixed;
+   }
 }
 
 .hero-content {
@@ -28,7 +32,11 @@
 
       @mixin atSmall {
          font-size: 2.2rem;
-         }
+      }
+
+      @mixin atMedium {
+         font-size: 3rem;
+      }
    }
 
    &__heading--large h2 {
@@ -37,10 +45,15 @@
       font-size: 10.5rem;
       font-weight: 800;
       text-transform: uppercase;
+      color: #fff;
 
       @mixin atSmall {
          margin: -2rem 0 0;
          font-size: 13rem;
+      }
+
+      @mixin atMedium {
+         font-size: 18rem;
       }
    }
 }

@@ -3,6 +3,13 @@
    flex-direction: column;
    margin: -3rem .625rem 0;
    padding: 0;
+
+   @mixin atMedium {
+      max-width: 62.5rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: -3rem auto 3rem;
+   }
 }
 
 .course {
@@ -17,11 +24,25 @@
       display: block;
       margin: 0;
       border-radius: 8px 8px 0px 0px;
+      overflow: hidden;
+
+      &:hover img {
+         transform: scale(1.1) rotate(3deg);
+      }
+
+      @mixin atMedium {
+         height: 25rem;
+      }
 
       & img {
          border-radius: 8px 8px 0px 0px;
-         height: 300px;
+         height: 18.75rem;
          object-fit: cover;
+         transition: all .3s;
+
+         @mixin atMedium {
+            height: 25rem;
+         }
       }
    }
    
@@ -30,18 +51,23 @@
    }
 
    &__title {
+      display: inline-block;
       position: relative;
-      margin-bottom: 1.6rem;
    }
 
    &__title::after {
       position: absolute;
       content: '';
       background-color: rgba(0, 204, 255, .9);
-      bottom: -.75rem;
+      bottom: 0;
       left: 0;
       width: 4rem;
       height: .5rem;
+      transition: width .3s;
+   }
+
+   &__title:hover&__title::after {
+      width: 100%;
    }
 
    &__title a {
@@ -51,10 +77,18 @@
 
    &__title h3 {
       font-weight: 500;
+      margin: .5rem 0 .75rem;
    }
 
    &__details {
       line-height: 1.6;
       font-weight: 300;
+   }
+
+   @mixin atMedium {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 47%;
+      margin: 0 auto 2rem;
    }
 }

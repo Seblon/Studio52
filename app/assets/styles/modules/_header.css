@@ -14,6 +14,12 @@
    margin: 1rem auto;
    width: 128px;
    z-index: 10;
+
+   @mixin atLarge {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+   }
 }
 
 .menu-icon {
@@ -77,45 +83,7 @@
       }
    }
 
-   @mixin atMedium {
+   @mixin atLarge {
       display: none;
-   }
-}
-
-.navigation {
-   position: absolute;
-   top: 0;
-   left: 100%;
-   width: 100%;
-   height: 100vh;
-   background-color: rgba(255, 255, 255, .94);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: flex-start;
-   transition: left .5s;
-
-   &--is-visible {
-      left: 0;
-      z-index: 9;
-   }
-}
-
-.navigation-list {
-   list-style: none;
-   text-transform: uppercase;
-   text-align: center;
-   margin: 8rem 0;
-   padding: 0;
-}
-
-.navigation-item {
-   margin-bottom: 2rem;
-
-   & a {
-      font-size: 1.2rem;
-      font-weight: 500;
-      text-decoration: none;
-      color: #333;
    }
 }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://kit.fontawesome.com/1ad77678d0.js" crossorigin="anonymous"></script>
+   <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext"
+      rel="stylesheet">
+   <title>Studio 52</title>
+</head>
+
+<body>
+
+   <!-- header -->
+   <header class="header">
+
+      <!-- logo -->
+      <div class="logo">
+         <a href="index.html"><img src="assets/img/logo.svg" alt="Logo"></a>
+      </div>
+      <!-- end of logo -->
+
+      <!-- menu icon-->
+      <div class="menu-icon">
+         <div class="menu-icon__centerline"></div>
+      </div>
+
+      <!-- navigation -->
+      <nav class="navigation">
+         <div class="navigation__container">
+            <a href="#" class="btn btm-m--3x">Bli medlem!</a>
+            <ul class="navigation__list">
+               <li class="navigation__item"><a href="index.html#courses">våra kurser</a></li>
+               <li class="navigation__item"><a href="principles.html">designprinciper</a></li>
+               <li class="navigation__item"><a href="contact.html">kontakt</a></li>
+               <li class="navigation__item navigation__item__outline"><a href="login_page.html">Logga in</a></li>
+            </ul>
+            <div class="navigation__footer">
+               <div class="navigation__footer__copyright">
+                  &copy; 2020 <img src="assets/img/logo.svg" alt="Design 52">
+               </div>
+               <div class="navigation__footer__reserved">All rights reserved.
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- end of navigation -->
+
+   </header>
+   <!-- end of header -->
+
+   <!-- content container -->
+   <section class="content-container x-padding">
+      <!-- page title etc -->
+      <div class="create-account__title">
+         <h3>Bli medlem idag!</h3>
+      </div>
+      <div class="log-in-instead btm-m--2x">Har du redan ett konto? <a href="login_page.html">Logga in</a>.</div>
+      <!-- end of page title etc -->
+
+      <!-- form -->
+      <form action="index.html" class="signup-form">
+         <label for="email">Din epostadress</label>
+         <input type="email" id="email" placeholder="exempel@gmail.com" autofocus>
+
+         <label for="password-1">Ange ett nytt lösenord</label>
+         <input type="password" id="password-1">
+
+         <label for="password-2">Ange ditt lösenord en gång till</label>
+         <input type="password" id="password-2">
+
+         <label for="full-name">Namn</label>
+         <input type="text" id="full-name" placeholder="Kalle Blomqvist">
+
+         <label for="dob">Födelsedatum</label>
+         <input type="text" id="dob" placeholder="1989XXXX-xxxx">
+
+         <input type="checkbox" name="terms" id="agree-terms">
+         <label for="agree-terms">
+            Jag godkänner <a href="#" target="_blank">villkoren</a>.
+         </label>
+
+         <button type="submit" role="button" class="btn btm-m--2x top-m--2x">Registrera mig</button>
+      </form>
+      <!-- end of form -->
+
+   </section>
+   <!-- end of content container -->
+
+   <!-- footer -->
+   <footer class="footer">
+      <div class="footer__content--left">
+         <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="index.html#courses">våra kurser</a></li>
+            <li class="footer__menu-item"><a href="principles.html">designprinciper</a></li>
+            <li class="footer__menu-item">kontakt</li>
+         </ul>
+      </div>
+
+      <div class="footer__content--right">
+         <h3>Möt oss i social media</h3>
+         <ul class="footer__social-icons">
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="footer__social-icon"><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+         </ul>
+      </div>
+
+   </footer>
+
+   <!-- end of footer -->
+
+   <script src="bundeled.js"></script>
+</body>
+
+</html>

@@ -2,7 +2,11 @@
 @import 'base/_mixins';
 @import 'base/_global';
 @import 'modules/_header';
+@import 'modules/_navigation';
 @import 'modules/_hero';
 @import 'modules/_courses';
 @import 'modules/_footer';
 @import 'modules/_article';
+@import 'modules/_forms';
+@import 'modules/_principles';
+@import 'modules/_product-page';

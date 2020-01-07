@@ -1,0 +1,138 @@
+.create-account__title {
+   text-align: center;
+
+   @mixin atMedium {
+         margin-top: 5rem;
+      }
+}
+
+.log-in-instead {
+   font-size: .9rem;
+   text-align: center;
+}
+
+.log-in-instead a {
+   color: #0081A2;
+   text-decoration: none;
+}
+
+
+.signup-form {
+   width: 100%;
+}
+
+.signup-form label,
+.signup-form input {
+   display: block;
+   margin: .75rem 0;
+   padding: 0;
+   width: 100%;
+}
+
+.signup-form input:not([type="checkbox"]) {
+   padding: .5rem 1rem;
+   border: 1px solid #ccc;
+   border-radius: 1.6rem;
+   font: inherit;
+}
+
+.signup-form input:not([type="checkbox"]):focus {
+   outline: none;
+   background-color: #d2f6ff;
+}
+
+.signup-form input[type=checkbox] {
+   margin-right: .5rem;
+}
+
+.signup-form input[type=checkbox],
+.signup-form input[type=checkbox] + label {
+   display: inline-block;
+   width: auto;
+   margin: 1rem auto;
+}
+
+.signup-form input[type=checkbox] + label a {
+   text-decoration: none;
+   color: #0081A2;
+}
+
+.signup-form .btn {
+   display: block;
+   margin: 2rem auto 0;
+}
+
+.login-form {
+   max-width: 50rem;
+}
+
+.signup-form #message {
+   width: 100%;
+   height: 10rem;
+   padding: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 1.6rem;
+}
+
+.contact-form {
+   display: block;
+   width: 100%;
+   background: white;
+   border: none;
+   border-radius: 1.6rem;
+   padding: .5rem .5rem 1rem;
+   margin: 0;
+   box-shadow: 0px 0px 1.2rem rgba(0, 0, 0, .2);
+
+   @mixin atSmall {
+      margin-right: 2rem;
+      margin-left: 2rem;
+      padding: 2rem;
+   }
+
+   @mixin atMedium {
+      padding: 2rem;
+      max-width: 50rem;
+   }
+
+   @mixin atLarge {
+      margin-top: 2rem;
+      padding: 1rem 2rem 2rem;
+   }
+
+   h3 {
+      font-size: 1.2rem;
+
+      @mixin atSmall {
+         font-size: 1.4rem;
+      }
+   }
+
+   h4 {
+      font-size: 1rem;
+
+      @mixin atSmall {
+         font-size: 1.2rem;
+      }
+   }
+}
+
+.map-bg {
+   display: block;
+   width: 100vw;
+   min-height: 100%;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/img/map-blurry-light-small-hi-dpi.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 2rem .5rem;
+   margin: 0;
+   z-index: 0;
+
+   @mixin atMedium {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/img/map-light-medium-hi-dpi.jpg');
+   }
+
+   @mixin atLarge {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/img/map-light-large-hi-dpi.jpg');
+   }
+}
