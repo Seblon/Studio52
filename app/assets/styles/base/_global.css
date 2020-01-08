@@ -64,9 +64,10 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    width: 100%;
    padding: 3.75rem .625rem;
-   margin: 0 auto;
+   margin: 3.75rem auto;
 
    &__single {
       padding: 3.75rem .625rem;
@@ -74,26 +75,29 @@ body {
 
    @mixin atLarge {
       max-width: 62.5rem;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
+
+      &__single {
+         flex-direction: row;
+         max-width: 62.5rem;
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+      }
+
+      &__inner {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         width: 100%;
+         margin-bottom: 1rem;
+      }
    }
 }
 
 .x-padding {
    @mixin atSmall {
       max-width: 50rem;
-      padding: 3.75rem 3rem;
-   }
-}
-
-@mixin atLarge {
-   .content-container__single {
-      flex-direction: row;
-      max-width: 62.5rem;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
+      padding: 0 3rem;
    }
 }
 
@@ -119,8 +123,9 @@ img {
    letter-spacing: 1px;
    border: none;
    transition: all .3s;
+   font-size: 1rem;
 
-   @mixin atMedium {
+   @mixin atSmall {
       max-width: 20rem;
       
       &:hover {

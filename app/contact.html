@@ -12,7 +12,7 @@
    <title>Studio 52</title>
 </head>
 
-<body>
+<body class="map-bg">
 
    <!-- header -->
    <header class="header">
@@ -52,24 +52,22 @@
    </header>
    <!-- end of header -->
 
-   <!-- map background -->
-   <div class="map-bg">
+   <!-- content container -->
+   <section class="content-container">
 
-      <!-- content container -->
-      <section class="content-container">
+      <!-- contact-form bg -->
+      <div class="contact-form">
 
-         <!-- contact-form bg -->
-         <div class="contact-form">
+         <!-- page title etc -->
+         <div class="create-account__title btm-m--2x">
+            <h3>Har du frågor till oss?</h3>
+            <h4>Hör av dig här.</h4>
+         </div>
+         <!-- end of page title etc -->
 
-            <!-- page title etc -->
-            <div class="create-account__title btm-m--2x">
-               <h3>Har du frågor till oss?</h3>
-               <h4>Hör av dig här.</h4>
-            </div>
-            <!-- end of page title etc -->
-
-            <!-- form -->
-            <form action="index.html" class="signup-form">
+         <!-- form -->
+         <form action="index.html" class="signup-form">
+            <div class="content-container__inner">
                <div class="contact--left">
                   <label for="name">Namn</label>
                   <input type="text" id="name" placeholder="Anders Svensson" required autofocus>
@@ -82,15 +80,15 @@
                   <textarea id="message" placeholder="Fråga oss något..." required></textarea>
                </div>
 
-               <button type="submit" role="button" class="btn btm-m--2x top-m--2x">Skicka
-                  meddelande</button>
-            </form>
-            <!-- end of form -->
-         </div>
-         <!-- end of contact-form bg -->
+            </div>
 
-   </div>
-   <!-- end of map background -->
+            <button type="submit" role="button" class="btn">Skicka
+               meddelande</button>
+         </form>
+         <!-- end of form -->
+
+      </div>
+      <!-- end of contact-form bg -->
 
    </section>
    <!-- end of content container -->
@@ -116,7 +114,6 @@
       </div>
 
    </footer>
-
    <!-- end of footer -->
 
    <script src="bundeled.js"></script>
