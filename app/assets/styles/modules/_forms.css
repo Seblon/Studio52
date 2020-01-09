@@ -157,16 +157,16 @@
 }
 
 .map-bg {
-   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/img/map-blurry-light-small-hi-dpi.jpg');
+   background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/map-blurry-light-small-hi-dpi.jpg');
    background-size: cover;
    background-repeat: no-repeat;
 
 
    @mixin atMedium {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/img/map-light-medium-hi-dpi.jpg');
+      background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/map-light-medium-hi-dpi.jpg');
    }
 
    @mixin atLarge {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('assets/img/map-light-large-hi-dpi.jpg');
+      background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../img/map-light-large-hi-dpi.jpg');
    }
 }
