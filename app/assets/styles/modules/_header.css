@@ -7,13 +7,13 @@
    height: 3.75rem;
    background-color: #00ccff;
    box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, .35);
-   z-index: 9;
+   z-index: 90;
 }
 
 .logo {
    margin: 1rem auto;
    width: 128px;
-   z-index: 10;
+   z-index: 999;
 
    @mixin atLarge {
       position: absolute;
@@ -27,7 +27,7 @@
    top: 1rem;
    right: 1rem;
    cursor: pointer;
-   z-index: 10;
+   z-index: 100;
    width: 2.2rem;
    height: 1.275rem;
 
