@@ -1091,7 +1091,7 @@ img {
    display: block;
    width: 100%;
    margin: 0;
-   padding: 4rem 0 0;
+   padding: 3rem 0 3rem;
    background-color: #00ccff;
    color: #333;
 
@@ -1359,6 +1359,7 @@ img {
 
 .create-account__title {
    text-align: center;
+   margin-top: 1rem;
 }
 
 @media (min-width: 22.5rem) {
