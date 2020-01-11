@@ -11,7 +11,7 @@
    background-repeat: no-repeat;
    background-attachment: scroll;
 
-   @mixin atMedium {
+   @mixin atLarge {
       background-attachment: fixed;
    }
 }

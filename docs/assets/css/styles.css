@@ -907,7 +907,7 @@ img {
    background-attachment: scroll;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 80rem) {
 
 .hero {
       background-attachment: fixed
