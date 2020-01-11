@@ -1011,31 +1011,30 @@ img {
                  transform: scale(1.1) rotate(3deg);
       }
 
+@media (min-width: 22.5rem) {
+
+.course__image {
+         max-height: 37.5rem
+   }
+   }
+
 @media (min-width: 50rem) {
 
 .course__image {
-         height: 25rem
+         max-height: 50rem
    }
    }
 
 .course__image img {
          border-radius: 8px 8px 0px 0px;
-         height: 18.75rem;
          -o-object-fit: cover;
             object-fit: cover;
          -webkit-transition: all .3s;
          transition: all .3s;
       }
 
-@media (min-width: 50rem) {
-
-.course__image img {
-            height: 25rem
-      }
-   }
-
 .course__desc {
-      padding: 0 .625rem .625rem;
+      padding: 0 1rem .625rem;
    }
 
 .course__title {
