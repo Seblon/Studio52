@@ -30,24 +30,23 @@
          transform: scale(1.1) rotate(3deg);
       }
 
+      @mixin atSmall {
+         max-height: 37.5rem;
+      }
+
       @mixin atMedium {
-         height: 25rem;
+         max-height: 50rem;
       }
 
       & img {
          border-radius: 8px 8px 0px 0px;
-         height: 18.75rem;
          object-fit: cover;
          transition: all .3s;
-
-         @mixin atMedium {
-            height: 25rem;
-         }
       }
    }
    
    &__desc {
-      padding: 0 .625rem .625rem;
+      padding: 0 1rem .625rem;
    }
 
    &__title {
